@@ -13,7 +13,7 @@ public class CalculadoraFormas {
         
         Forma forma = null;
 
-        String opcao;
+        String opcao = "0";
 
         do{
             System.out.println("Escolha a forma geométrica:\n1 - Círculo\n2 - Quadrado\n3 - Triângulo\n4 - Sair");
@@ -60,6 +60,7 @@ public class CalculadoraFormas {
             } catch (Exception e) {
                 System.out.println("Valor inválido");
                 forma = null;
+                opcao = scanner.next();
             }
 
             if (forma != null){
